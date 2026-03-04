@@ -2,7 +2,7 @@
 
 A structured portfolio of my **SmartInternz Data Science Internship (May–Jun 2022)**, covering foundational exercises (Python, NumPy, Visualisation, Preprocessing) and a capstone project that delivers an end-to-end **customer segmentation** solution with a **Flask web interface** and **IBM Watson Machine Learning (WML) deployment (documented)**.
 
-> **Goal** I worked through a complete, industry-style workflow—data handling → clustering → supervised modelling → deployment → UI—while building strong fundamentals through sequential assignments.
+> **Goal:** I worked through a complete, industry-style workflow—data handling → clustering → supervised modelling → deployment → UI—while building strong fundamentals through sequential assignments.
 
 ---
 
@@ -144,3 +144,51 @@ Because cloud credentials should never be committed to GitHub, this repo is desi
 #### 1) Install dependencies
 ```bash
 pip install numpy pandas scikit-learn matplotlib seaborn xgboost flask joblib
+```
+
+#### 2) Create a local Flask app (example)
+
+If you don’t already have a local version, create app.py in the project root and paste the following:
+```bash
+import numpy as np
+import pandas as pd
+import joblib
+from flask import Flask, request, render_template
+
+app = Flask(__name__)
+
+# Load trained model artifact (saved during internship project)
+model = joblib.load("xgbmodel.pkl")
+
+@app.route("/")
+def home():
+    return render_template("template.html")
+
+@app.route("/predict", methods=["POST"])
+def predict():
+    # Read values in the same order as the form fields
+    vals = [float(x) for x in request.form.values()]
+    cols = ["Sex","Marital status","Age","Education","Income","Occupation","Settlement size"]
+    X = pd.DataFrame([vals], columns=cols)
+
+    pred = int(model.predict(X)[0])
+
+    if pred == 0:
+        msg = "Not a potential customer"
+    elif pred == 1:
+        msg = "Potential customer"
+    else:
+        msg = "Highly potential customer"
+
+    return render_template("template.html", prediction_text=msg)
+
+if __name__ == "__main__":
+    app.run(debug=True)
+```
+
+#### 3) Run the application
+```bash
+python app.py
+```
+
+Then open: http://127.0.0.1:5000/

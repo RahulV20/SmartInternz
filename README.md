@@ -191,6 +191,8 @@ python app.py
 
 Then open: http://127.0.0.1:5000/
 
+---
+
 ###  IBM Watson Deployment
 
 As part of the internship, the trained model was also deployed to IBM Watson Machine Learning and tested via a scoring endpoint.
@@ -202,6 +204,8 @@ To keep this repository secure, the cloud deployment is documented via screensho
 
 #### Deployment Details
 ![Deployment](assets/deployment1.png)
+
+---
 
 ## Assignment Portfolio (Sequential Learning)
 
@@ -245,6 +249,8 @@ These assignments reflect the structured learning path of the internship, progre
 - StandardScaler usage (where required)
 - File: **Vudatha Rahul_Assignment 4.pdf**
 
+---
+
 ## Setup
 
 This repo is runnable locally with Python 3.8+.
@@ -253,6 +259,8 @@ This repo is runnable locally with Python 3.8+.
 - Create a virtual environment
 - Install dependencies
 - Run the Flask demo (local mode)
+
+---
 
 ## Credential
 

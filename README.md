@@ -210,7 +210,7 @@ These assignments reflect the structured learning path of the internship, progre
 - String operations, splitting, formatting
 - Lists, nested indexing, dictionaries
 - Basic logic and function-style exercises
-- File: Vudatha Rahul_Assignment 1.pdf
+- File: **Vudatha Rahul_Assignment 1.pdf**
 
 **2) Assignment 2 — NumPy**
 
@@ -219,7 +219,7 @@ These assignments reflect the structured learning path of the internship, progre
 - Array creation (zeros/ones/range)
 - Matrix reshaping and slicing
 - Basic statistics and vectorised operations
-- File: Vudatha Rahul_Assignment 2.pdf
+- File: **Vudatha Rahul_Assignment 2.pdf**
 
 **3) Assignment 3 — Data Visualisation**
 
@@ -229,7 +229,7 @@ These assignments reflect the structured learning path of the internship, progre
 - Histogram and count plot
 - Heatmap correlation
 - Boxplot, pairplot, jointplot, KDE
-- File: Vudatha Rahul_Assignment 3.pdf
+- File: **Vudatha Rahul_Assignment 3.pdf**
 
 **4) Assignment 4 — Data Preprocessing Workflow**
 
@@ -239,4 +239,4 @@ These assignments reflect the structured learning path of the internship, progre
 - Encoding categorical variables (OneHotEncoder)
 - Train/test split, feature/target separation
 - StandardScaler usage (where required)
-- File: Vudatha Rahul_Assignment 4.pdf
+- File: **Vudatha Rahul_Assignment 4.pdf**

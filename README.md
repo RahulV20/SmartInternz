@@ -200,10 +200,10 @@ As part of the internship, the trained model was also deployed to IBM Watson Mac
 To keep this repository secure, the cloud deployment is documented via screenshots rather than shipping credentialed scripts.
 
 #### Saving Model + Install WML
-![Model](assets/model.png)
+![Model](assets/model .png)
 
 #### Deployment Details
-![Deployment](assets/deployment.png)
+![Deployment](assets/deployment .png)
 
 ## Assignment Portfolio (Sequential Learning)
 

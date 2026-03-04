@@ -1,1 +1,146 @@
-# SmartInternz
+# SmartInternz Data Science Internship – Customer Segmentation (IBM Watson + Flask)
+
+A structured portfolio of my **SmartInternz Data Science Internship (May–Jun 2022)**, covering foundational exercises (Python, NumPy, Visualisation, Preprocessing) and a capstone project that delivers an end-to-end **customer segmentation** solution with a **Flask web interface** and **IBM Watson Machine Learning (WML) deployment (documented)**.
+
+> **Goal** I worked through a complete, industry-style workflow—data handling → clustering → supervised modelling → deployment → UI—while building strong fundamentals through sequential assignments.
+
+---
+
+## Table of Contents
+- [Internship Snapshot](#internship-snapshot)
+- [What I Delivered](#what-i-delivered)
+- [Capstone Project: Customer Segmentation](#capstone-project-customer-segmentation)
+  - [Business Context](#business-context)
+  - [Dataset](#dataset)
+  - [Solution Approach](#solution-approach)
+  - [Results & Outputs](#results--outputs)
+  - [Demo (Flask UI)](#demo-flask-ui)
+  - [Local Deployment (Recommended)](#local-deployment-recommended)
+  - [IBM Watson Deployment (Documented)](#ibm-watson-deployment-documented)
+- [Assignment Portfolio (Sequential Learning)](#assignment-portfolio-sequential-learning)
+- [Repository Structure](#repository-structure)
+- [Setup](#setup)
+- [Security Note](#security-note)
+- [Credential](#credential)
+- [Contact](#contact)
+
+---
+
+## Internship Snapshot
+
+**Program:** SmartInternz Data Science Internship  
+**Location:** Chennai, India 
+**Duration:** May 2022 – Jun 2022  
+**Capstone:** Customer Segmentation using IBM Watson Machine Learning + Flask
+
+**Core skills developed**
+- Python programming for analytics
+- Numerical computing with NumPy
+- Exploratory Data Analysis (EDA) and visualisation
+- Data preprocessing and encoding for ML
+- Customer segmentation using clustering
+- Supervised classification for segment prediction
+- Deployment concepts (IBM WML) + UI integration (Flask)
+
+---
+
+## What I Delivered
+
+### ✅ End-to-end capstone (deployment-ready concept)
+- Built a segmentation workflow that groups customers using **K-Means** and **Hierarchical Clustering**
+- Converted cluster outputs into **segment labels** and trained supervised models to predict segments
+- Benchmarked multiple algorithms (Decision Tree, Random Forest, XGBoost, KNN) and selected a final model for deployment
+- Delivered a **Flask UI** to collect customer attributes and return a segment prediction
+
+### ✅ Foundation assignments (skills built sequentially)
+- Python programming fundamentals (strings, lists, dicts, formatting, problem solving)
+- NumPy exercises (array creation, reshaping, slicing, statistics)
+- Seaborn/Matplotlib visualisations (line, scatter, bar, histogram, heatmap, boxplot, pairplot, jointplot, KDE)
+- Preprocessing workflow (missing values, one-hot encoding, train/test split)
+
+---
+
+## Capstone Project: Customer Segmentation
+
+### Business Context
+Customer segmentation helps organisations identify groups of customers with similar characteristics so they can:
+- target marketing more effectively,
+- personalise offers,
+- prioritise high-potential customers,
+- improve customer retention and lifetime value.
+
+This project predicts customer segment potential using demographic and socioeconomic inputs.
+
+---
+
+### Dataset
+This repo includes a reproducible sample dataset:
+
+- File: **`Segmentation.csv`**
+- Shape: **2000 rows × 7 features**
+- Input features used in the app:
+  - `Sex`, `Marital status`, `Age`, `Education`, `Income`, `Occupation`, `Settlement size`
+
+> Note: the dataset in this repo is included for reproducibility. The approach is designed to scale to larger customer datasets in real deployments.
+
+---
+
+### Solution Approach
+
+#### 1) Clustering (Unsupervised Learning)
+I first explored segmentation using clustering algorithms:
+- **K-Means** (validated using WCSS/Elbow Method)
+- **Hierarchical clustering** (validated using a dendrogram)
+
+These steps create meaningful customer groups without predefined labels.
+
+#### 2) Segment Prediction (Supervised Learning)
+To enable real-time predictions in an application (instead of re-running clustering each time), I trained supervised models to predict the segment label based on the 7 input attributes.
+
+Models benchmarked:
+- Decision Tree  
+- Random Forest  
+- XGBoost  
+- KNN  
+
+The final model was saved (e.g., `xgbmodel.pkl`) for deployment / inference.
+
+---
+
+### Results & Outputs
+
+#### Elbow Method (Selecting optimal K)
+![WCSS / Elbow Method](assets/wcss_elbow.png)
+
+#### Cluster Visualisation (K-Means)
+![Clusters of Customers](assets/kmeans_clusters.png)
+
+#### Hierarchical Clustering (Dendrogram)
+![Dendrogram](assets/dendrogram.png)
+
+#### Model Evaluation (Example Confusion Matrix / Accuracy)
+![Model Evaluation Output](assets/model_evaluation.png)
+
+> ✅ These visuals are taken from my internship notebooks/report to show the actual workflow and outputs.
+
+---
+
+### Demo (Flask UI)
+
+The Flask interface accepts the 7 feature inputs and returns one of three segment labels:
+
+- **Not a potential customer**
+- **Potential customer**
+- **Highly potential customer**
+
+![Flask UI](assets/flask_ui.png)
+
+---
+
+### Local Deployment (Recommended)
+
+Because cloud credentials should never be committed to GitHub, this repo is designed so you can run the demo **locally** using the saved model file.
+
+#### 1) Install dependencies
+```bash
+pip install numpy pandas scikit-learn matplotlib seaborn xgboost flask joblib

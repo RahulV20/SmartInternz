@@ -191,7 +191,7 @@ python app.py
 
 Then open: http://127.0.0.1:5000/
 
-## IBM Watson Deployment
+###  IBM Watson Deployment
 
 As part of the internship, the trained model was also deployed to IBM Watson Machine Learning and tested via a scoring endpoint.
 

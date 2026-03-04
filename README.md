@@ -192,3 +192,51 @@ python app.py
 ```
 
 Then open: http://127.0.0.1:5000/
+
+## IBM Watson Deployment
+
+As part of the internship, the trained model was also deployed to IBM Watson Machine Learning and tested via a scoring endpoint.
+
+To keep this repository secure, the cloud deployment is documented via screenshots rather than shipping credentialed scripts.
+
+## Assignment Portfolio (Sequential Learning)
+
+These assignments reflect the structured learning path of the internship, progressing from programming basics to ML-ready workflows.
+
+**1) Assignment 1 — Python Fundamentals**
+
+**Focus:** core problem solving and Python syntax
+
+- String operations, splitting, formatting
+- Lists, nested indexing, dictionaries
+- Basic logic and function-style exercises
+- File: Vudatha Rahul_Assignment 1.pdf
+
+**2) Assignment 2 — NumPy**
+
+**Focus:** numerical computing foundations
+
+- Array creation (zeros/ones/range)
+- Matrix reshaping and slicing
+- Basic statistics and vectorised operations
+- File: Vudatha Rahul_Assignment 2.pdf
+
+**3) Assignment 3 — Data Visualisation**
+
+**Focus:** EDA and communicating insights
+
+- Line plot, scatter, bar plot
+- Histogram and count plot
+- Heatmap correlation
+- Boxplot, pairplot, jointplot, KDE
+- File: Vudatha Rahul_Assignment 3.pdf
+
+**4) Assignment 4 — Data Preprocessing Workflow**
+
+**Focus:** preparing real datasets for modelling
+
+- Missing value checks
+- Encoding categorical variables (OneHotEncoder)
+- Train/test split, feature/target separation
+- StandardScaler usage (where required)
+- File: Vudatha Rahul_Assignment 4.pdf

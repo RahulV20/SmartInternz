@@ -199,6 +199,12 @@ As part of the internship, the trained model was also deployed to IBM Watson Mac
 
 To keep this repository secure, the cloud deployment is documented via screenshots rather than shipping credentialed scripts.
 
+#### Saving Model + Install WML
+![Model(assets/model.png)
+
+#### Deployment Details
+![Deployment(assets/deployment.png)
+
 ## Assignment Portfolio (Sequential Learning)
 
 These assignments reflect the structured learning path of the internship, progressing from programming basics to ML-ready workflows.
@@ -240,3 +246,22 @@ These assignments reflect the structured learning path of the internship, progre
 - Train/test split, feature/target separation
 - StandardScaler usage (where required)
 - File: **Vudatha Rahul_Assignment 4.pdf**
+
+## Setup
+
+This repo is runnable locally with Python 3.8+.
+
+**Recommended:**
+- Create a virtual environment
+- Install dependencies
+- Run the Flask demo (local mode)
+
+## Credential
+
+Project completion certificate:
+
+#### Certificate
+![Certificate(assets/certificate.png)
+
+**Certificate text:
+“Customer Segmentation using IBM Watson Machine Learning” — Approved by SmartInternz (June 28, 2022)**

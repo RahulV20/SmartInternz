@@ -16,13 +16,11 @@ A structured portfolio of my **SmartInternz Data Science Internship (May–Jun 2
   - [Results & Outputs](#results--outputs)
   - [Demo (Flask UI)](#demo-flask-ui)
   - [Local Deployment (Recommended)](#local-deployment-recommended)
-  - [IBM Watson Deployment (Documented)](#ibm-watson-deployment-documented)
+  - [IBM Watson Deployment](#ibm-watson-deployment)
 - [Assignment Portfolio (Sequential Learning)](#assignment-portfolio-sequential-learning)
-- [Repository Structure](#repository-structure)
 - [Setup](#setup)
-- [Security Note](#security-note)
 - [Credential](#credential)
-- [Contact](#contact)
+
 
 ---
 

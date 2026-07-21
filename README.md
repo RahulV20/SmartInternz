@@ -75,7 +75,7 @@ This project predicts customer segment potential using demographic and socioecon
 This repo includes a reproducible sample dataset:
 
 - File: **`Segmentation.csv`**
-- Shape: **2000 rows × 7 features**
+- Shape: **5000 rows × 7 features**
 - Input features used in the app:
   - `Sex`, `Marital status`, `Age`, `Education`, `Income`, `Occupation`, `Settlement size`
 
